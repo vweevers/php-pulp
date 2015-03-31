@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="./bootstrap.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         processIsolation="false"
+         backupGlobals="false"
+         colors="true"
+         reportUselessTests="true"
+         disallowTestOutput="true"
+  >
+
+    <testsuites>
+        <testsuite name="Pulp Test suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
