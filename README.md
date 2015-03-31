@@ -2,7 +2,7 @@
 
 pulp is a streaming build system, *something like* [gulp](http://gulpjs.com/) for PHP. Meaning: with `src("*.css")` you get a asynchronous duplex stream that emits virtual file objects. This stream can then be piped to one or more plugins or to a filesystem destination with `dest("target-dir")`. **pulp is a weekend experiment, please use a VM if you want to play with it.** Requires PHP 5.4+.
 
-[![packagist status](https://img.shields.io/packagist/v/weevers/pulp.svg?style=flat-square)](https://packagist.org/packages/weevers/pulp) [![Travis build status](https://img.shields.io/travis/vweevers/php-pulp.svg?style=flat-square&label=travis)](http://travis-ci.org/vweevers/php-pulp) [![AppVeyor build status](https://img.shields.io/appveyor/ci/vweevers/php-pulp.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/vweevers/php-pulp) [![Dependency status](https://img.shields.io/versioneye/d/vweevers/php-pulp.svg?style=flat-square)](https://versioneye.com/vweevers/php-pulp)
+[![packagist status](https://img.shields.io/packagist/v/weevers/pulp.svg?style=flat-square)](https://packagist.org/packages/weevers/pulp) [![Travis build status](https://img.shields.io/travis/vweevers/php-pulp.svg?style=flat-square&label=travis)](http://travis-ci.org/vweevers/php-pulp) [![AppVeyor build status](https://img.shields.io/appveyor/ci/vweevers/php-pulp.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/vweevers/php-pulp) [![Dependency status](https://www.versioneye.com/user/projects/551ac01e3661f134fe0001d5/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/551ac01e3661f134fe0001d5)
 
 Jump to: [install](#install) / [license](#license)
 
