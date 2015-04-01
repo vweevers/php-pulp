@@ -40,9 +40,9 @@ If we leave out the Concat plugin, all javascript files are copied. Note that a 
 
 $pulp
   ->src('assets/**/*.js')
-  ->pipe($pulp->dest('build'))
-  ->run();
-;
+  ->pipe($pulp->dest('build'));
+
+$pulp->run();
 
 ?>
 ```
