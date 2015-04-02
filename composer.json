@@ -20,10 +20,11 @@
   "type": "library",
   "require": {
     "php": ">=5.4.0",
-    "weevers/path": "0.1.*",
+    "weevers/path": "~0.2",
     "react/stream": "0.4.*",
     "react/event-loop": "dev-master",
-    "michaldudek/foundation": "dev-master"
+    "webmozart/glob": "dev-master",
+    "mikey179/vfsStream": "~1.5"
   },
   "autoload": {
     "psr-4": {

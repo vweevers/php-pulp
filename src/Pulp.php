@@ -6,7 +6,7 @@ use Weevers\Pulp\ObjectStream
   , React\EventLoop\LoopInterface
   , React\EventLoop\Factory
   , Weevers\Path\Path
-  , MD\Foundation\Utils\FilesystemUtils;
+  , Webmozart\Glob\Glob;
 
 class Pulp {
   protected $loop;
@@ -51,11 +51,12 @@ class Pulp {
       }
 
       if ($isGlob) {
-        $base = Path::resolve(self::globParent($pattern));
+        $pattern = Path::resolve($pattern);
+        $base = self::globParent($pattern);
 
-        // TODO: do an asynchronous glob? or use a recursive iterator
-        $results = FilesystemUtils::glob($pattern, GLOB_BRACE);
-        
+        // TODO: use a recursive iterator or ObjectStream
+        $results = Glob::glob(str_replace('\\', '/', $pattern));
+
         $nextFile = function() use(&$nextFile, &$results, &$next, $stream, $base) {
           if (count($results)===0) return $next();
           $result = array_shift($results);
